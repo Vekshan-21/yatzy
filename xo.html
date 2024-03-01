@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatzy game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="h1">Tic Tac Toe</h1>
+
+    <table id="score-board">
+        <tr>
+          <td id="player-x-score" class="player-x">Player X: 0</td>
+          <td id="player-o-score" class="player-o">Player O: 0</td>
+        </tr>
+      </table>
+    <div id="gameContainer">
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Restart</button>
+        <button id="resetScoreBtn">Reset Score</button>
+    </div>
+
+    <div id="gameOverArea" class="hidden">
+        <p id="gameOverText">Winner is X!</p>
+        <button id="gameOverRestartBtn">Play Again!</button>
+    </div>
+    <script src="functions.js"></script>
+ 
+</body>
+</html>
+
