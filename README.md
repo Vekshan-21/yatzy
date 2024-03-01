@@ -1,2 +1,2 @@
 # yatzy
-Devoir
+Devoir 2
