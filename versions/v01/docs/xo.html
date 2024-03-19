@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Type Declaration: Defines the document as an HTML5 document -->
+    <!-- Language Attribute: Declares the language of the document -->
+    <meta charset="UTF-8"> <!-- Declares the character encoding of the document as UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Sets the compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport properties for responsive design -->
+    <title>Tic Tac Toe game</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="xostyle.css"> <!-- Link to an external CSS file -->
+</head>
+<body>
+
+    <h1 class="h1">Tic Tac Toe</h1> <!-- Heading for the game -->
+
+    <!-- Score Board Table -->
+    <table id="score-board">
+        <tr>
+          <td id="player-x-score" class="player-x">Player X: 0</td> <!-- Displays score for Player X -->
+          <td id="player-o-score" class="player-o">Player O: 0</td> <!-- Displays score for Player O -->
+        </tr>
+    </table>
+
+    <!-- Game Container -->
+    <div id="gameContainer">
+        <!-- Cell Container: Divs representing individual cells of the game board -->
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div> <!-- Cell with index 0 -->
+            <div cellIndex="1" class="cell"></div> <!-- Cell with index 1 -->
+            <div cellIndex="2" class="cell"></div> <!-- Cell with index 2 -->
+            <div cellIndex="3" class="cell"></div> <!-- Cell with index 3 -->
+            <div cellIndex="4" class="cell"></div> <!-- Cell with index 4 -->
+            <div cellIndex="5" class="cell"></div> <!-- Cell with index 5 -->
+            <div cellIndex="6" class="cell"></div> <!-- Cell with index 6 -->
+            <div cellIndex="7" class="cell"></div> <!-- Cell with index 7 -->
+            <div cellIndex="8" class="cell"></div> <!-- Cell with index 8 -->
+        </div>
+        <h2 id="statusText"></h2> <!-- Displays game status -->
+        <button id="restartBtn">Restart</button> <!-- Button to restart the game -->
+        <button id="resetScoreBtn">Reset Score</button> <!-- Button to reset the score -->
+    </div>
+
+    <!-- Game Over Area: Displayed when the game is over -->
+    <div id="gameOverArea" class="hidden">
+        <p id="gameOverText">Winner is X!</p> <!-- Displays the winner of the game -->
+        <button id="gameOverRestartBtn">Play Again!</button> <!-- Button to play again -->
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="functions.js"></script>
+
+</body>
+</html>
