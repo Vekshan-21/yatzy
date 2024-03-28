@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('xoback.gif'); /* Replace 'back.gif' with the actual file name of your GIF */
+}
+
+.welcome {
+    background-color: rgba(4, 237, 66, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+body, input, button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #333;
+}
+
+input[type=text] {
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin: 3px 0;
+    width: 265px;
+    padding: 8px 5px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tic-tac-toe {
+    margin: 5em;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity and color as needed */
+}
+
+.tic-tac-toe td {
+    border: 2px solid rgb(0, 213, 255);
+    width: 100px;
+    height: 100px;
+}
+
+.tic-tac-toe .vertical-border {
+    border-left-color: blue;
+    border-right-color: blue;
+}
+
+.tic-tac-toe .horizontal-border {
+    border-top-color: blue;
+    border-bottom-color: blue;
+}
+
+.tic-tac-toe .center-border {
+    border-color: blue;
+}
+
+.welcome .p-name {
+    margin: 40px 0;
+    font-family: arial black;
+    color: blue;
+}
+
+.reset-btn {
+    display: inline-block;
+    font-size: 10pt;
+    color: rgb(145, 255, 0);
+    margin-top: 50px;
+}
